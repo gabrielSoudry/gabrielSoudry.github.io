@@ -1,6 +1,3 @@
-# Daeun's Tech Blog
+# Project website
 
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
+Jenkill website using theme : https://github.com/thelehhman/texture
