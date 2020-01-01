@@ -22,6 +22,11 @@ texture:
   showNav: false
   showPicker: false
 
+# generate social links in footer
+social_links:
+  github:  gabi22top
+  linkedIn: in/gabriel-soudry
+  rss: rss
  
 
 # If you want to link only specific pages in your header, uncomment
