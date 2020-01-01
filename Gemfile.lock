@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    texture (0.3)
+    texture (0.1)
       jekyll (~> 3.7)
       jekyll-seo-tag (~> 2.1)
 

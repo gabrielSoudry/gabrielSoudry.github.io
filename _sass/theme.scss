@@ -53,12 +53,6 @@ h4 {
 	@include fluidType(18px, 20px);
 }
 
-figcaption {
-	font-size: 10pt;
-	line-height: 1.5em;
-	margin-top: -1em;
-}
-
 header {
 	// background-size: cover;
 	padding: 120px 0;
@@ -107,6 +101,10 @@ header {
 
 	div.highlighter-rouge {
 		right: 150px;
+	}
+
+	@media screen and (min-width: 1600px){
+		max-width: 1200px;
 	}
 
 	@media screen and  (max-width: $mobileWidth) {
