@@ -37,3 +37,5 @@ group :fetcher do
   gem 'faraday_middleware', '~> 0.9.2'
 end
 
+gem "texture"
+
