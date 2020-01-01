@@ -771,52 +771,6 @@ header {
         background-color: rgba(255, 255, 255, 0.15);
         cursor: pointer; }
 
-#texture-picker {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 8px 12px; }
-  #texture-picker p {
-    margin: 0;
-    font-size: 14px; }
-    @media screen and (min-width: 320px) {
-      #texture-picker p {
-        font-size: calc(14px + 1 * ((100vw - 320px) / 960)); } }
-    @media screen and (min-width: 1280px) {
-      #texture-picker p {
-        font-size: 15px; } }
-  #texture-picker .info {
-    background-color: rgba(255, 214, 141, 0.7);
-    border-radius: 4px;
-    font-size: 13px;
-    padding: 10px;
-    margin-top: 10px;
-    max-width: 200px;
-    line-height: 1.3em; }
-  #texture-picker .texture-colors {
-    display: flex; }
-    #texture-picker .texture-colors > div {
-      width: 30px;
-      height: 30px;
-      margin: 4px;
-      border: 1px solid #eee;
-      border-radius: 4px; }
-      #texture-picker .texture-colors > div:hover {
-        cursor: pointer; }
-  #texture-picker #red {
-    background-color: orangered; }
-  #texture-picker #blue {
-    background-color: lightblue; }
-  #texture-picker #black {
-    background-color: #111; }
-  #texture-picker #purple {
-    background-color: rebeccapurple; }
-  #texture-picker #green {
-    background-color: mediumseagreen; }
-
 .texture-black {
   background-image: url("/texture/assets/textures/black.jpg"); }
   .texture-black h2 {
