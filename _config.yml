@@ -15,8 +15,8 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Embedded Software Engineer
-  tagline: Developer
+  title: Gabriel Soudry
+  tagline: Embedded Software Engineer
   date_format: "%b %-d, %Y"
   style: blue
   showNav: false
