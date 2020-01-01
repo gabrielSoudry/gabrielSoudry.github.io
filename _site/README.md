@@ -1,3 +1,6 @@
 # Project website
 
-Jenkill website using theme : https://github.com/thelehhman/texture
+
+Link to the website : [click here](https://gabi22top.github.io/)
+
+Jenkill website theme : [Github repo](https://github.com/thelehhman/texture)

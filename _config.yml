@@ -19,7 +19,7 @@ texture:
   tagline: Embedded Software Engineer
   date_format: "%b %-d, %Y"
   style: blue
-  showNav: false
+  showNav: true
   showPicker: false
   # generate social links in footer
   social_links:
