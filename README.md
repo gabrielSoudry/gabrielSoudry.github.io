@@ -1,3 +1,3 @@
-# Gabriel SODURY Project website
+# Project website
 
 Jenkill website using theme : https://github.com/thelehhman/texture
