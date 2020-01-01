@@ -15,17 +15,18 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Gabriel SOUDRY
-  tagline: Embedded Software Engineer
+  title: Adam Denisov
+  tagline: Developer. Designer
   date_format: "%b %-d, %Y"
-  style: blue
+  style: black
   showNav: false
-  showPicker: false
+  showPicker: true
 
   # generate social links in footer
   social_links:
-    github:  gabi22top
-    linkedIn: in/gabriel-soudry
+    twitter: thelehhman
+    github:  thelehhman
+    linkedIn: in/thelehhman
     rss: rss
  
 
