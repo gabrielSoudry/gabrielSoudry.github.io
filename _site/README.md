@@ -1,6 +1,7 @@
-# Project website
+# Project personal website
 
+Fun little project to learn jekyll and GitHub pages !
 
-Link to the website : [click here](https://gabi22top.github.io/)
+Link to the website : [click here](https://gabrielSoudry.github.io/)
 
-Jenkill website theme : [Github repo](https://github.com/thelehhman/texture)
+Jekyll website theme : [Github repo](https://github.com/thelehhman/texture)

@@ -5,22 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
-<title>Hello, Jekyll</title>
+<title>Position and Speed Control of a DC Motor using ROS</title>
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Hello, Jekyll | Gabriel Soudry Project</title>
+<title>Position and Speed Control of a DC Motor using ROS | Gabriel Soudry Project</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Hello, Jekyll" />
+<meta property="og:title" content="Position and Speed Control of a DC Motor using ROS" />
 <meta name="author" content="Gabriel Soudry" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse" />
-<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse" />
+<meta name="description" content="I decided for this first tutorial to make a tutorial about PID with ROS. It’s probaly the most important part of a autonomous robot… And the most complicaded." />
+<meta property="og:description" content="I decided for this first tutorial to make a tutorial about PID with ROS. It’s probaly the most important part of a autonomous robot… And the most complicaded." />
 <link rel="canonical" href="http://localhost:4000/posts/welcome-to-jekyll/" />
 <meta property="og:url" content="http://localhost:4000/posts/welcome-to-jekyll/" />
 <meta property="og:site_name" content="Gabriel Soudry Project" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-05-23T17:33:36+02:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/posts/welcome-to-jekyll/","@type":"BlogPosting","headline":"Hello, Jekyll","dateModified":"2019-05-23T17:33:36+02:00","datePublished":"2019-05-23T17:33:36+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/welcome-to-jekyll/"},"author":{"@type":"Person","name":"Gabriel Soudry"},"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/welcome-to-jekyll/"},"url":"http://localhost:4000/posts/welcome-to-jekyll/","author":{"@type":"Person","name":"Gabriel Soudry"},"headline":"Position and Speed Control of a DC Motor using ROS","dateModified":"2019-05-23T17:33:36+02:00","description":"I decided for this first tutorial to make a tutorial about PID with ROS. It’s probaly the most important part of a autonomous robot… And the most complicaded.","datePublished":"2019-05-23T17:33:36+02:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body>
@@ -31,7 +31,7 @@
 		<a href="#"><li>About</li></a>
 	</ul>
 </div></div><div class="container">
-	<h1>Hello, Jekyll</h1>
+	<h1>Position and Speed Control of a DC Motor using ROS</h1>
 	<h4 class="post-description"></h4>
 	<div class="post-date" style="margin-top:20px">
 		Published on May 23, 2019
@@ -42,11 +42,20 @@
   <main>
     <div class="container">
       <div class="post-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+          <p>I decided for this first tutorial to make a tutorial about PID with ROS. It’s probaly the most important part of a autonomous robot… And the most complicaded.</p>
 
-<p><img src="https://images.unsplash.com/photo-1500322969630-a26ab6eb64cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;w=1000&amp;q=80" alt="texture theme preview" /></p>
+<p>So first let’s begin by the beginning… What’s PID ?</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>A proportional integral derivative controller (PID controller) is a common method of controlling robots. PID theory will help you design a better control equation for your robot.</p>
+
+<p>Put same voltage on a two motors will not help your robot to go straight. (Like many people believe)
+You will need an feedback of your motors to help the microcontroller to send the right voltage on your motors to go straight !</p>
+
+<p>So let’s begin with some definition :</p>
+
+<p>Proportional Integrative Differential (PID) controller is used for a variety of applications. A proportional controller stands in a case where the input is proportional to the output. Here if the input has less noise, the output will be all most exact with no errors but minimal errors in some cases. In contrast, if the noise content is much in the input, then even the errors will be very high and the process is very slow. So this process wanted an updation to it and hence came the Proportional Differential controllers. In PID controllers, the Integrative part does the operations by integrating the current values and minimizing the errors as much as possible. Next part is the Differential part where the output can soon be predicted with the help of differentiating  the current values thus making the operations as fast as possible and also as accurate as possible. This PID controllers as costlier compared to the other controllers but they are worth their cost. They are now being used in control systems in most of the industries. (Source [PID][PID])</p>
+
+<p><img src="http://drive.google.com/uc?export=view&amp;id=1RUp7PhoLMYdfMKSe9lBZftWdADfVmKKi" alt="texture theme preview" /></p>
 
 
       </div>
